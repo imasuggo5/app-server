@@ -1,0 +1,8 @@
+---
+- hosts: app-server
+  tasks:
+    - name: install microk8s
+      community.general.snap:
+        name: microk8s
+        classic: yes
+        channel: 1.26
